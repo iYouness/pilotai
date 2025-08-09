@@ -1,5 +1,68 @@
 {
-  "message": "Not Found",
-  "documentation_url": "https://docs.github.com/rest",
-  "status": "404"
+  "latest_version": "4.1.0",
+  "release_info": {
+    "version": "4.1.0",
+    "release_date": "2025-01-15",
+    "is_critical": false,
+    "min_required_version": "4.0.0"
+  },
+  "download_links": {
+    "windows": {
+      "x64": "https://github.com/iYouness/pilotai/releases/download/v1.1.0/PilotAI-1.1.0-win64.exe",
+      "x86": "https://github.com/iYouness/pilotai/releases/download/v1.1.0/PilotAI-1.1.0-win32.exe"
+    },
+    "macos": {
+      "intel": "https://github.com/iYouness/pilotai/releases/download/v1.1.0/PilotAI-1.1.0-macos-intel.dmg",
+      "apple_silicon": "https://github.com/iYouness/pilotai/releases/download/v1.1.0/PilotAI-1.1.0-macos-arm64.dmg",
+      "universal": "https://github.com/iYouness/pilotai/releases/download/v1.1.0/PilotAI-1.1.0-macos-universal.dmg"
+    },
+    "linux": {
+      "x64": "https://github.com/iYouness/pilotai/releases/download/v1.1.0/PilotAI-1.1.0-linux-x64.AppImage",
+      "arm64": "https://github.com/iYouness/pilotai/releases/download/v1.1.0/PilotAI-1.1.0-linux-arm64.AppImage"
+    },
+    "direct_download": "https://github.com/iYouness/pilotai/releases/download/v1.1.0/PilotAI-1.1.0.zip"
+  },
+  "changelog": {
+    "ar": {
+      "title": "الإصدار 4.1.0 - ميزات جديدة",
+      "changes": [
+        "إضافة نظام التحديث التلقائي",
+        "دعم macOS (Intel و Apple Silicon)",
+        "تحسينات في واجهة المستخدم",
+        "إصلاح أخطاء الأداء",
+        "دعم لغات إضافية",
+        "تحسين الأمان والاستقرار"
+      ]
+    },
+    "en": {
+      "title": "Version 4.1.0 - New Features",
+      "changes": [
+        "Added automatic update system",
+        "macOS support (Intel & Apple Silicon)",
+        "User interface improvements",
+        "Performance bug fixes",
+        "Additional language support",
+        "Enhanced security and stability"
+      ]
+    }
+  },
+  "requirements": {
+    "windows": {
+      "min_os_version": "Windows 10",
+      "disk_space_mb": 150,
+      "ram_mb": 512
+    },
+    "macos": {
+      "min_os_version": "macOS 11.0 (Big Sur)",
+      "disk_space_mb": 200,
+      "ram_mb": 512,
+      "architectures": ["x86_64", "arm64"]
+    },
+    "linux": {
+      "min_kernel": "4.15",
+      "disk_space_mb": 150,
+      "ram_mb": 512,
+      "required_libs": ["glibc", "gtk3"]
+    }
+  }
 }
