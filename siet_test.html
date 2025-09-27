@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مقال مع تطبيق</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+  }
+  .article {
+    max-width: 800px;
+    margin: auto;
+  }
+  .app-container {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #145dbf;
+  }
+</style>
+</head>
+<body>
+
+<div class="article">
+  <h1>عنوان المقال</h1>
+  <p>هذا نص المقال الذي يتحدث عن موضوع معين، ويمكنك إضافة أي محتوى هنا.</p>
+
+  <!-- تطبيق داخل المقال -->
+  <div class="app-container">
+    <h2>تطبيق بسيط: عداد تفاعلي</h2>
+    <p>عدد النقرات: <span id="counter">0</span></p>
+    <button onclick="incrementCounter()">اضغط هنا</button>
+  </div>
+
+  <!-- زر مشاركة على فيسبوك -->
+  <div style="margin-top: 20px;">
+    <button onclick="shareOnFacebook()">شارك المقال على فيسبوك</button>
+  </div>
+</div>
+
+<script>
+  // التطبيق: عداد تفاعلي
+  let count = 0;
+  function incrementCounter() {
+    count++;
+    document.getElementById('counter').innerText = count;
+  }
+
+  // مشاركة على فيسبوك
+  function shareOnFacebook() {
+    const url = encodeURIComponent(window.location.href);
+    const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+    window.open(facebookShareUrl, '_blank', 'width=600,height=400');
+  }
+</script>
+
+</body>
+</html>
